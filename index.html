@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'roboto';
+            background-color: #ffffff; 
+            color: #000000;
+        }
+
+        .container,
+        .cont-nav {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+
+        .navbar {
+          
+            background: rgb(57,161,245);
+background: linear-gradient(90deg, rgba(57,161,245,1) 0%, rgba(125,237,255,1) 100%);
+        }
+
+        .cont-nav {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .cont-nav h2 {
+            color: #ffffff;
+            display: grid;
+            align-content: center;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        ul li {
+            margin: 20px;
+            padding: 10px 15px;
+            background-color: #ffffff;
+            ;
+        }
+        ul li:hover{
+            background: linear-gradient(90deg, rgba(57,161,245,1) 0%, rgba(125,237,255,1) 100%);
+            color: #ffffff;
+            font-weight: 700;
+            transition: 0.2s;}
+        ul li a {
+            text-decoration: none;
+            color:#000000;
+            font-weight: 700
+        }
+        ul li a:hover{ color: #ffffff;}
+        .image {
+            display: flex;
+            margin-top: 50px;
+        }
+
+        .image img {
+            width: 480px;
+        }
+
+        .text {
+            display: grid;
+            align-content: center;
+            line-height: 2;
+            padding: 30px;
+            margin: 0 auto;
+
+        }
+
+        .text h2 {
+            font-weight: 700;
+            font-size: 35px;
+        }
+
+        span {
+            font-size: 17px;
+        }
+
+        .text a {
+            color: rgb(0, 0, 0);
+            border: 2px solid rgb(0, 0, 0);
+            padding: 3px 20px;
+            justify-self: start;
+            margin-top: 20px;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .text a:hover {
+            
+            background: linear-gradient(90deg, rgba(57,161,245,1) 0%, rgba(125,237,255,1) 100%);
+            border: 2px solid rgba(125,237,255,1);
+            color: #ffffff;
+         
+            transition: 0.2s;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="navbar">
+        <div class="cont-nav">
+            <h2>Rajinus Salehat</h2>
+            <ul>
+                <li><a href="">Home</a></li>
+                <!-- <li><a href="dept.html">ECE</a></li> -->
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+    </section>
+    <section class="container">
+        <div class="image">
+            <img src="images/profile-pic (6).png"  alt="my image">
+            <div class="text">
+                <h2>My name is Rajinus Salehat.</h2>
+                <span>I am currently a student in Department of Electronics Communication
+                    Engineering.</span>
+                <a href="contact.html">contact me</a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

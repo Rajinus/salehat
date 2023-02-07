@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <style>
+   @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{font-family: 'roboto' ;}
+      .container {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+      }
+      
+      h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+      
+      form {
+        display: inline-block;
+        text-align: left;
+        margin-bottom: 50px;
+      }
+      
+      input[type="text"], 
+      input[type="email"], 
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+      
+      input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        font-size: 18px;
+        background: linear-gradient(90deg, rgba(57,161,245,1) 0%, rgba(125,237,255,1) 100%);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+     
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Contact Me</h1>
+      <form>
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Message" required></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </body>
+</html>
