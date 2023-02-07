@@ -7,17 +7,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-
-body{font-family: 'roboto' ;}
         body {
-            background: rgb(57,161,245);
-background: linear-gradient(90deg, rgba(57,161,245,1) 0%, rgba(125,237,255,1) 100%);
-            font-family: Arial, Helvetica, sans-serif;
-           
-            color: rgb(0, 0, 0);
+            font-family: 'roboto';
+        }
+
+        h1 {
+            font-size: 40px;
+            letter-spacing: -1px
+        }
+
+        h1:hover {
+            letter-spacing: 2px
+        }
+
+        .cont-nav {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+
+        .navbar {
+
+            background: rgb(57, 161, 245);
+            background: linear-gradient(90deg, rgba(57, 161, 245, 1) 0%, rgba(125, 237, 255, 1) 100%);
+        }
+
+        .cont-nav {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .cont-nav h2 {
+            color: #ffffff;
+            display: grid;
+            align-content: center;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        ul li {
+            margin: 20px;
+            padding: 10px 15px;
+            background-color: #ffffff;
+            ;
+        }
+
+        ul li:hover {
+            background: linear-gradient(90deg, rgba(57, 161, 245, 1) 0%, rgba(125, 237, 255, 1) 100%);
+            color: #ffffff;
+            font-weight: 700;
+            transition: 0.2s;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #000000;
+            font-weight: 700
+        }
+
+        ul li a:hover {
+            color: #ffffff;
         }
 
         .container {
@@ -28,69 +89,77 @@ background: linear-gradient(90deg, rgba(57,161,245,1) 0%, rgba(125,237,255,1) 10
             align-items: center;
         }
 
+        .header {
+            text-align: center;
+            margin-top: 10px;
+            text-decoration: underline;
+        }
+
         .about {
-            border: 5px solid white;
-            padding: 70px 120px;
-            background-color: #ffffff;
-            margin-top:30px;
-            box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
         }
 
-        table td {
+        .me {
+            display: grid;
+            align-content: center;
+        }
+
+        .me p {
             line-height: 1.5;
-            padding: 10px 25px
         }
 
-        td:nth-child(1) {
-            font-weight: 700;
-            text-align: right;
+        .image {
+            width: 350px;
+
         }
     </style>
 </head>
 
 <body>
-    <section class="container">
-        <div class="about">
-
-            <table>
-                <tr>
-                    <td>NAME:</td>
-                    <td>Rajinus Salehat</td>
-                </tr>
-                <tr>
-                    <td>STUDENT ID:</td>
-                    <td>1802125</td>
-                </tr>
-                <tr>
-                    <td>FACULTY:</td>
-                    <td>CSE</td>
-                </tr>
-                <tr>
-                    <td>DEARTMENT:</td>
-                    <td>ECE</td>
-                </tr>
-                <tr>
-                    <td>LEVEL:</td>
-                    <td>4</td>
-                </tr>
-                <tr>
-                    <td>SEMESTER:</td>
-                    <td>I</td>
-                </tr>
-                <tr>
-                    <td>HOMETOWN:</td>
-                    <td>Dinajpur</td>
-                </tr>
-                <tr>
-                    <td>HOBBIES:</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>CURRENT INSTITUTION:</td>
-                    <td>HSTU</td>
-                </tr>
-            </table>
+    <section class="navbar">
+        <div class="cont-nav">
+            <h2>Rajinus Salehat</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="skill.html">My Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </div>
+
+    </section>
+    <section class="container">
+        <div class="header">
+            <h1>About Me</h1>
+        </div>
+        <div class="about">
+            <div class="me">
+
+                <p>
+                    Hi!</br>
+                    This is Rajinus Salehat.
+                    </br>
+
+                    I'm currently a student of Hajee Mohammad Danesh Science and technology University.
+                    </br>
+                    My home district is Dinajpur.
+
+                    </br>
+
+                    I love reading, cooking and gaming in my spare times. </br>
+                    Sometimes, I work on designing web. I have done some projects on web design</br> using Html, CSS,
+                    bootstrap and Javascript.
+                    </br>
+                    I am also an expert in microsoft word, excel and powerpoint.
+                </p>
+
+            </div>
+            <div class="image"><img src="images/about.png" alt=""></div>
+        </div>
+
     </section>
 </body>
 
