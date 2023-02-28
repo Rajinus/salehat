@@ -80,10 +80,22 @@
 
         .img1 {
             margin-top: 30px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+        }
+
+        .sk {
+            width: 50%;
+        }
+
+        h2 {
+            margin: 10px;
         }
 
         img {
-            width: 30%;
+            width: 75%;
             height: 250px;
             box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
         }
@@ -105,16 +117,34 @@
     <section>
         <div class="container">
             <div class="img1">
-                <img src="images/html.jpg" alt="">
-                <img src="images/css.jpg" alt="">
-                <img src="images/js.jpg" alt="">
+                <div class="sk">
+                    <h2>1.HTML</h2>
+                    <img src="images/html.jpg" alt="">
+                </div>
+                <div class="sk">
+                    <h2> 2.CSS</h2>
+                    <img src="images/css.jpg" alt="">
+                </div>
+            </div>
+            <div class="img1">
+                <div class="sk">
+                    <h2>3.JAVASCRIPT</h2>
+                    <img src="images/js.jpg" alt="">
+                </div>
 
+                <div class="sk">
+                    <h2>4.Microsoft Word</h2><img src="images/word.jpg" alt="">
+                </div>
             </div>
-            <div class="img2">
-                <img src="images/word.jpg" alt="">
-                <img src="images/excel.jpg" alt="">
-                <img src="images/pp.jpg" alt="">
+            <div class="img1">
+                <div class="sk">
+                    <h2>5.Microsoft Excel</h2><img src="images/excel.jpg" alt="">
+                </div>
+                <div class="sk">
+                    <h2>6.Microsoft Powerpoint</h2><img src="images/pp.jpg" alt="">
+                </div>
             </div>
+        </div>
         </div>
     </section>
 </body>
